@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="register.css">
+<script src="register.js"></script>
+</head>
+<body>
+
+    <form action="/action_page.php">
+        <div class="container">
+          <h1 id="reg">Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+             <label for="fname"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+      
+             <label for="lname"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+          
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+          <form action="/action_page.php">
+            <div class="container">
+              <h1>Personal Details</h1>
+              <p>Please fill the correct details.</p>
+              <hr>
+                 <label for="fname"><b>Name</b></label>
+              <input type="text" placeholder="Name" name="name" id="name" value="XXXX">
+          
+                 <label for="dob"><b>DOB</b></label>
+              <input type="text" placeholder="Enter Date of Birth" name="dob" id="dob" required>
+              
+              <div class="form-group">
+                <label class="col-sm-5 pmtallocated"><b> Gender</b> <sup>★</sup></label><br>
+                <div class="col-sm-7 forfieldPlace nopadding">
+                    <div class="formfieldCnt">
+                        <span>
+                            <input id="rbMale" name="Gender" type="radio" value="2">
+                            <label for="rbMale">Male</label>
+                        </span>
+                        <span>
+                            <input id="rbFeMale" name="Gender" type="radio" value="1">
+                            <label for="rbFeMale">Female</label>
+                        </span>
+                        <span>
+                            <input id="rbOthers" name="Gender" type="radio" value="3">
+                            <label for="rbOthers">Transgender</label>
+                        </span>
+                        <label class="error-message" id="lblerrorGender"></label>
+                    </div>
+                </div>
+            </div>
+              
+              <label for="fathername"><b>Father Name</b></label>
+              <input type="text" placeholder="Enter father name" name="fathername" id="father" required>
+          
+              <label for="mothername"><b>Mother Name</b></label>
+              <input type="text" placeholder="Enter mothername" name="mothername" id="mother" required>
+
+              
+          <div class="form-group">
+            <label class="col-sm-5"><b>Mobile Number</b> <sup>★</sup> </label>
+            <div class="col-sm-7 forfieldPlace nopadding">
+                <div class="formfieldCnt">
+                    <input class="form-control" id="MobileNum" maxlength="10" name="MobileNum" onkeypress="return (event.charCode == 8 || event.charCode == 9) || (event.charCode >= 48 &amp;&amp; event.charCode <= 57)" type="text" value="">
+                    <label class="error-message" id="lblMobileNum"></label>
+                </div>
+            </div>
+        </div>
+    
+              
+              <label for="address"><b>Address</b></label>
+              <input type="text" placeholder="Enter permanent address" name="address" id="address" required>
+
+
+              <div class="form-group">
+                <label class="col-sm-5"><b> State  of Permanent Address</b> <sup>★</sup> </label>
+                <div class="col-sm-7 forfieldPlace nopadding">
+                    <div class="formfieldCnt">
+        <select class="form-control" id="OriginState" name="OriginState"><option value="">--Select--</option>
+            <option name="OriginState" value="Telangana">Telangana</option>
+            <option name="OriginState" value="Andhra Pradesh">Andhra Pradesh</option>
+            <option name="OriginState" value="Tamil Nadu">Tamil Nadu</option>
+            <option name="OriginState" value="Karnataka">Karnataka</option>
+        </select>                               
+             <label class="error-message" id="lblOriginState"></label>
+                    </div>
+                </div>
+            </div>
+  
+
+    
+              <label for="pan number"><b>PAN</b></label>
+              <input type="number" placeholder="Enter PAN number" name="PAN" id="PAN" required><br>
+    
+              <label for="adhaar"><b>Adhaar</b></label>
+              <input type="number" placeholder="Enter Adhaar Number" name="adhaar" id="adhaar" required><br>
+    
+              <label for="pin"><b>Pincode</b></label>
+              <input type="number" placeholder="Enter Pincode" name="pin" id="pin" required><br>
+    
+          
+            
+            </div>
+            
+            
+          </form>
+          <h1 id="EQ">Educational Qualifications</h1><br>
+
+          <div class="form-group">
+            <label class="col-sm-5 pmtallocated"><b>Highest Level of Educational Qualification</b> <sup>★</sup></label>
+            <div class="col-sm-7 forfieldPlace nopadding">
+                <div class="formfieldCnt">
+                    
+    <select class="form-control" id="Levelofeducationqualification" name="Levelofeducationqualification"><option value="">--Select--</option>
+    <option name="LoEQ" value="Matriculation (10th)">Matriculation (10th)</option>
+    <option name="LoEQ" value="Higher Secondary (10+2)">Higher Secondary (10+2)</option>
+    <option  name="LoEQ"  value="Diploma">Diploma</option>
+    <option name="LoEQ"  value="Graduation">Graduation</option>
+    <option name="LoEQ" value="Post Graduation">Post Graduation</option>
+    <option name="LoEQ" value="Ph.D">Ph.D</option>
+    </select>                         
+               <label class="error-message" id="lblLevelofeducationqualification"></label>
+                </div>
+            </div>
+        </div>
+
+     <br><label for="inname"><b>Institution Name</b></label>
+        <input type="text" placeholder="Enter Institution Name" name="inname" id="inname" required><br><br>
+
+        <label for="percentage"><b>Percentage</b></label>
+        <input type="number" placeholder="Enter Percentage" name="pername" id="pername1" required><br><br>
+    
+
+    
+      
+
+         <br> <h2 id="edulevel-1"><b>10th or equivalent</b></h2><br>
+      <div class="col-sm-10 col-sm-offset-1">
+          <div class="form-group">
+              <label class="col-sm-5 pmtallocated"><b> Education Board </b><sup>★</sup></label>
+              <div class="col-sm-7 forfieldPlace nopadding">
+                  <div class="formfieldCnt">
+                      <div class="formfieldCnt">
+                          
+      <select class="form-control" id="EducationBoard" name="EducationBoard"><option value="">--Select--</option>
+        <option value="1">Andhra Pradesh State Board of Secondary Education</option>
+        <option value="2">Central Board of Secondary Education (CBSE)</option>
+        <option value="3">Board of Secondary Education Telangana</option>
+      </select>                     
+                      </div>
+                  </div>
+              </div>
+          </div>
+      <br>
+
+      <label for="startyear1"><b>Starting Year</b></label>
+      <input type="number" placeholder="Enter Starting Year" name="startyear1" id="startyear1" required><br>
+           
+      <label for="endyear1"><b>End Year</b></label>
+      <input type="number" placeholder="Enter End Year" name="endyear1" id="endyear1" required><br>
+       
+
+        <label for="percentage"><b>Percentage</b></label>
+        <input type="number" placeholder="Enter Percentage" name="pername" id="pername2" required><br><br>
+         
+          <label for="sname"><b>Name of School</b></label>
+          <input type="text" placeholder="Enter School Name" name="sname" id="sname" required>
+
+         <h3 id="mame1">Upload your orininal 10th marks memo below:</h3>
+             <form action="/action_page.php">
+               <input type="file" id="myfile1" name="myfile"><br><br>
+            </form>
+      
+
+    
+
+
+      
+      <h2 id="edulevel-2"><b>Intermediate or equivalent</b></h2><br><br>
+      <div class="col-sm-10 col-sm-offset-1">
+          <div class="form-group">
+              <label class="col-sm-5 pmtallocated"><b> Education Board </b><sup>★</sup></label>
+              <div class="col-sm-7 forfieldPlace nopadding">
+                  <div class="formfieldCnt">
+                      <div class="formfieldCnt">
+                          
+      <select class="form-control" id="EducationBoard" name="EducationBoard"><option value="">--Select--</option>
+        <option value="1"> Andhra Pradesh State Board of Secondary Education</option>
+        <option value="2">Central Board of Secondary Education (CBSE)</option>
+        <option value="3">Board of Secondary Education Telangana</option>
+    </select>                     
+                      </div>
+                  </div>
+              </div>
+          </div><br><br>
+         
+
+          <label for="startyear2"><b>Starting Year</b></label>
+          <input type="number" placeholder="Enter Starting Year" name="startyear2" id="startyear2" required><br>
+               
+          <label for="endyear2"><b>End Year</b></label>
+          <input type="number" placeholder="Enter End Year" name="endyear2" id="endyear2" required><br>
+               
+          
+        <label for="percentage"><b>Percentage</b></label>
+        <input type="number" placeholder="Enter Percentage" name="pername" id="pername3" required><br><br>
+    
+         
+          <label for="cname"><b>College Name</b></label>
+          <input type="text" placeholder="Enter College Name" name="cname" id="cname" required><br><br>
+
+           
+              <h3 id="mame2" >Upload your orininal intermediate marks memo below:</h3>
+                 <form action="/action_page.php">
+                      <input type="file" id="myfile2" name="myfile">
+                 </form><br><br>       
+
+           <form action="/action_page.php">
+                 <input type="radio" id="agreed" name="agree" value="agree">
+                 <label for="agreement">By creating an account you agree to our <a href="#">Terms & Privacy</a></label><br>
+             </form><br><br>
+
+          <center>
+          <div class="form-group">
+              <div class="col-sm-7 col-sm-offset-5 nopadding">
+                  <div class="sbmitandcancelBtns">
+                      
+                    <button type="button" onclick="preview()">
+                        Submit
+                    </button>
+ /                   
+                      
+                  </div>
+  
+          </div>
+          
+          <input id="hdnflag" name="hdnflag" type="hidden" value="">
+      
+      </div></center<br><br><br>
+
+    <center>
+      <div id="mypreview" class="form-text" ></div>
+      <div id="mydate" class="form-text" ></div>
+      <div id="mydetails" class="form-text"></div>
+      <div id="mymail" class="form-text"> </div>
+      <div id="mypsw" class="form-text"> </div>
+      <div id="mydob" class="form-text"> </div>
+      <div id="result" class="form-text"></div>
+      <div id="myfather" class="form-text"> </div>
+      <div id="mymother" class="form-text"> </div>
+      <div id="myaddress" class="form-text"> </div>
+      <div id="mystate" class="form-text"></div>
+      <div id="myPAN" class="form-text"> </div>
+      <div id="myadhaar" class="form-text"> </div>
+      <div id="mypin" class="form-text"> </div>
+      <div id="myhigh" class="form-text"></div>
+      <div id="mypin" class="form-text"> </div>
+      <div id="mysname" class="form-text"> </div>
+      <div id="myMobileNum" class="form-text"> </div>
+      <div id="mycname" class="form-text"> </div>
+    </center>      
+        </div>
+       
+    
+
+        
+            
+
+
+        
+      </form>
+      </body>
+  </html>

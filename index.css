@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+      
+}
+h1{
+    color: rgb(21,167,21);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 45px;
+}
+h2,p{
+    color: rgb(21,167,21);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: auto;
+}
+a:link, a:visited{
+    background-color: rgb(21,167,21);
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 11px;
+}
+a:active{
+    background-color: blueviolet;
+}
+a:hover{
+    background-color: red;
+}

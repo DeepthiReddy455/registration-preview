@@ -1,0 +1,65 @@
+*{
+    font-family: sans-serif;
+}
+
+#row1, #row3 , #row7{
+    background-color:darkcyan;
+    color: white;
+    padding: 0px;
+    padding-left: 160px;
+}
+#row12{
+    background-color:darkcyan;
+    color: white;
+    padding: 0px;
+    padding-left: 100px;
+}
+#row14, #row16{
+    background-color:darkcyan;
+    color: white;
+    padding: 0px;
+    padding-left: 80px;
+}
+#row5{
+    background-color:darkcyan;
+    color: white;
+    padding: 0px;
+    padding-left: 100px;
+
+}
+#row2, #row4, #row6, #row8, #row13{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#obj-con, #edu-con, #awards-con, #dec-con, #skill-con, #lan-con, #interest-con{
+    border: 2px solid darkcyan;
+    margin-bottom: 3px;
+}
+ul {
+    list-style-type: none;
+}
+#mymail, #myMobNum, #myaddress, #mystate, #mypin{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 15px;
+    padding-left: 9px;
+}   
+#pd-con{
+    border: 2px solid darkcyan;
+    background-color: darkcyan;
+    color: antiquewhite;
+    margin-bottom: 3px;
+}
+#myname{
+    text-align: center;
+    padding-top: 25px;
+    height: 40px;
+    padding-left: 65px;
+    padding-bottom: 25px;
+}
+#col1{
+    margin-right: ;
+}
+
+
+
