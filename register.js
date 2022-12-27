@@ -45,20 +45,18 @@ function preview(){
 			
 			for(i = 0; i < high.length; i++) {
 				if(high[i].selected)
-				document.getElementById("myhigh").innerHTML
+				document.getElementById("edu-list3-1").innerHTML
 						= high[i].value;
 			}
-    let zip=document.getElementById("pin").value;
-    document.getElementById("mypin").innerHTML=zip;
-    //missing
+   
     let ms=document.getElementById("sname").value;
-    document.getElementById("mysname").innerHTML=ms;
+    document.getElementById("edu-list1-1").innerHTML=ms;
     //missing
     let mobnum=document.getElementById("MobileNum").value;
     document.getElementById("myMobileNum").innerHTML=mobnum;
     //missing
     let cllg=document.getElementById("cname").value; 
-    document.getElementById("mycname").innerHTML=cllg;
+    document.getElementById("edu-list2-1").innerHTML=cllg;
     }
 
 
